@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Probando
+        </title>
+        <script type="text/javascript">
+            let parrafos = document.getElementsByTagName("p");
+            for(let i = 0; i < parrafos.length; i++){
+                alert(parrafos[i].innerText);
+            }
+        </script>
+        <style>
+            .caja {
+                background-color:black;
+                width:500px;
+                height:500px;
+                color:white;
+            }
+
+        </style>
+    </head>
+    <body>
+    <!-- Esto es un comentario -->
+    <div class="caja">
+        <h1 class="titulo">Pruebas</h1>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p id="parrafo3">Parrafo 3</p>
+    </div>
+    <div class="caja">
+        Esto es una caja
+    </div>
+    <form method="get">
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>
+                    <input type="text" name="nombre" value="Alberto">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

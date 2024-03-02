@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        let nombreregex = new RegExp("/^[a-zA-Z]$/");
+        let emailregex = new RegExp("/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i");
+        let dniregex = new RegExp("^[\d]{1,3}\.?[\d]{3,3}\.?[\d]{3,3}$");
+        let contraseñaregex = new RegExp("^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$");
+        let ipregex = new RegExp("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+        
+        function validate_name(name){
+            if (nombreregex.test(name.value)) {
+                console.log("nombre valido...");
+
+        }
+        function validate_surname(entrada){
+            if (nombre_apellidosregex.test(entrada.value)) {
+                console.log("apellido valido...");
+            }else{
+                console.log("apellido no valido...")
+            }
+        }
+        function validate_email(entrada){
+            if (email = emailregex) {
+                console.log("email valido...");
+            }else{
+                console.log("email no valido...")
+            }
+        }
+        function validate_dni(entrada){
+            if (dni = dniregex) {
+                console.log("dni valido...");
+            }else{
+                console.log("dni no valido...")
+            }
+        }
+        function validate_password(entrada){
+            if (password = contraseñaregex) {
+                console.log("contraseña valida...");
+            }else{
+                console.log("contraseña no valida...")
+            }
+        }
+        function validate_ip(entrada){
+            if (ip = ipregex) {
+                console.log("ip valido...");
+            }else{
+                console.log("ip no valido...")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>FORMULARIO:</h1>
+            <dl>
+                <dd>
+                    <label>Nombre: </label>
+                    <input type="text" id="name" onblur="validate_name(this.value)">
+                </dd>
+                <dd>
+                    <label>Apellidos: </label>
+                    <input type="text" id="surname" onblur="validate_surname()">
+                </dd>
+                <dd>
+                    <label>E-mail: </label>
+                    <input type="text" id="email" onblur="validate_email()">
+                </dd>
+                <dd>
+                    <label>DNI: </label>
+                    <input type="text" id="dni" >
+                </dd>
+                <dd>
+                    <label>contraseña: </label>
+                    <input type="text" id="password" >
+                </dd>
+                <dd>
+                    <label>Rep.cont: </label>
+                    <input type="text" id="r-password" >
+                </dd>
+                <dd>
+                    <label>IP Equipo: </label>
+                    <input type="text" id="ip" >
+                </dd>
+                <dd>
+                    <button id="button">ASEPTO</button>
+                </dd>
+            </dl>
+        </form>
+    </div>
+</body>
+</html>

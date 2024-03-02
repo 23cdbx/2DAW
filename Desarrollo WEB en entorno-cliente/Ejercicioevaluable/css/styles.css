@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+#contenedor {
+    width: auto;
+    height: 920px;
+    border: 5px solid black;
+    background-color: whitesmoke;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#caja form{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.input {
+    border: 2px solid black;
+    position: relative;
+    background-color: lightgray;
+    width: 230px;
+    height: 40px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+form .contenido label {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 10px;
+    margin: 5px;
+}
+
+.botones {
+    display: block;
+    position: relative;
+    top: 4px;
+}
+
+#botonBorrar {
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: red;
+    background-color:rgb(242, 184, 184);
+}
+
+#botonBorrar img {
+    height: 20px;
+    width: 20px;
+}
+
+#botonEditar {
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid;
+    border-color:greenyellow;
+    background-color: rgb(232, 253, 200);
+}
+
+#botonEditar img {
+    height: 20px;
+    width: 20px;
+}
+
+#botonSuma {
+    position: relative;
+    top: 79%;
+    left: 95%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#botonSuma img {
+    width: 40px;
+    height: 40px;
+}

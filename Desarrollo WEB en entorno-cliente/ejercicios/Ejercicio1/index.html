@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio1</title>
+    
+    <script>
+        /**
+         * Creamos las variables que vamos a usar por el resto del
+         * ejercicio.
+         */
+        let tamanioArray = parseInt(prompt("Ingrese el tamaño del array: "));
+        let arr = [];
+        let valor = 0;
+        let valorMax = Number.MAX_VALUE * -1;
+        /**
+         * Creamos un bucle, y le decimos que mientras i siga siendo
+         * menor que la variabel tamanioArray, siga preguntandonos por
+         * nuevos valores.
+         */
+        for (let i = 0; i < tamanioArray; i++) {
+            valor = parseInt(prompt("Introduce los elementos del array: "));
+            if (!isNaN(valor)) {
+                arr.push(valor);
+            } else {
+                alert("Solo números enteros, animal.");
+                i--;
+
+            }
+        }
+        /**
+         * Creamos un for para que recorra el valor de nuestro array.
+         */
+        for (let numero of arr) {
+            /**
+             * Evaluamos si valorMax es menor que "numero" para almacenar
+             * en el, el numero mas grande hasta el momento.
+             */
+            if (valorMax < numero)
+                valorMax = numero;
+        }
+        /**
+         * Finalmente, mostramos en pantalla en forma de tabla el
+         * array que hemos creado en forma de tabla, y abajo, mostramos
+         * el valor mas grande.
+         */
+        console.table(arr);
+        console.log("El valor mas grande es: " + valorMax);
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <p>Escribir un programa que en primera instancia nos pida el número de elementos de un array, y en<br>
+        segunda cada uno de ellos (números enteros).<br>
+        Al finalizar deberá decir cuál es el número más alto.</p>
+</body>
+
+</html>

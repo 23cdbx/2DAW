@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de tabla</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function crearTabla() {
+            let filas = 3;
+            let columnas = 3;
+
+            let tabla = document.createElement("table");
+            for (let i = 0; i < filas; i++) {
+                let tr = document.createElement("tr")
+                for(let j = 0; j < columnas; j++){
+                    let td = document.createElement("td");
+                    tr.appendChild(td);
+                }
+                tabla.appendChild(tr);
+            }   
+            movidas.appendChild(tabla);
+           /* let tabla = document.createElement("table");
+            tabla.innerHTML = "<table><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></table>";
+            document.body.appendChild(tabla);*/
+        }
+    </script>
+</head>
+<body>
+    <button onclick="crearTabla()">Pulsa aqui guapeton</button>
+    <h1>CREADOR DE TABLAS INCREIBLE</h1>
+    <div id="movidas"></div>
+</body>
+</html>

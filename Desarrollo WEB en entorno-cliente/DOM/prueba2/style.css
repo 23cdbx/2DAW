@@ -1,0 +1,27 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    float: left;
+    margin: 10px;
+}
+
+tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+}
+
+td{
+    background-color: silver;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+td:hover {
+    background-color: red;
+}

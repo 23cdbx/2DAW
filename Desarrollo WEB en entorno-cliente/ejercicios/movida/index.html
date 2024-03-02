@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let email = (prompt("Escribe un e-mail: "));
+        proteMail(email);
+
+        function proteMail(email){
+            let mail_seg = email.split("@");
+            let nombre = mail_seg[0];
+            let nombre_med = nombre.substring(0, nombre.length / 2);
+
+            alert(`${nombre_med}...@${mail_seg[1]}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+.carta {
+    transition: all .3s;
+    background-color:whitesmoke;
+    width:200px;
+    border-radius:10px;
+    box-shadow:5px 5px 15px black;
+    height: auto;
+    padding:10px;
+    margin:5px;
+    float:left;
+    max-height:330px;
+    border:1px solid transparent;
+    position: relative;
+}
+.carta:hover {
+    box-shadow:1px 1px 7px black;
+    transition: all .3s;
+    cursor: pointer;
+    border:1px solid black;
+    background-color: papayawhip;
+}
+.carta .asignaturas {
+    transition: all .3s;
+    padding:10px;
+    background-color: papayawhip;
+    width:calc(100% - 20px);
+    border-radius:10px;
+    box-shadow:5px 5px 15px black;
+    height: calc(100% - 20px);
+    float:left;
+    border:1px solid transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size:10px;
+}
+.carta .asignaturas b {
+    color: red;
+}
+
+.carta .asignaturas strong {
+    color: navy;
+}
+
+.carta .nombre{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.carta .email {
+    width:100%;
+    font-size: 8px;
+    font-style: italic;
+    text-align: center;
+}
+.carta img {
+    border-radius:10px;
+    width: 100%;
+}
+#main {
+    width:1165px;
+    margin:0 auto;
+    background-color: rgba(255,13,0,0.17);
+    padding: 10px;
+    border-radius:10px;
+}
+.carta .rol {
+    position:absolute;
+    width:25px;
+    height:25px;
+    background-color:white;
+    border:1px solid black;
+    border-radius:50%;
+    /* padding:7px;*/
+    text-align:center;
+    vertical-align: middle;
+    top:-7px;
+    right:-7px;
+    font-size:18px;
+    box-shadow:5px 5px 15px black;
+    text-shadow: 3px 3px 5px black;
+    z-index: 100;
+}
+.profesor {
+    background-color: red !important;
+    color:white;
+}
+.alumno {
+    background-color: green !important;
+    color:white;
+}
+.ocultar {
+    display: none;
+}
+#protector {
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:black;
+    opacity: .7;
+    z-index:145;
+}
+#titulo {
+    width:100%;
+    height:100%;
+    position: fixed;
+    padding-top:100px;
+    top:0;
+    left:0;
+    text-align: center;
+    z-index: 150;
+}
+#titulo img {
+    width:30%;
+    height: auto;
+}
+button {
+    transition: border,box-shadow .3s;
+    width: 200px;
+    cursor:pointer;
+    background-color: darkred;
+    color:white;
+    font-weight:bold;
+    padding:15px;
+    margin-top:20px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    box-shadow:3px 3px 10px transparent;
+}
+button:hover {
+    transition: border,box-shadow .3s;
+    border:1px solid white;
+    box-shadow:3px 3px 10px black;
+}
+#menu {
+    text-align:center;
+    padding:15px;
+}
+#botonera {
+    padding:15px;
+    text-align:center;
+}
+
+#asignaturas {
+    padding-top:20px;
+    width:50%;
+    height:570px;
+    background-color:white;
+    box-shadow:10px 10px 25px black;
+    margin:0 auto;
+    position: absolute;
+    top:300px;
+    left:25%;
+    text-align:center;
+    border-radius:15px;
+    z-index:150;
+}
+
+#asignaturas table {
+    margin: auto;
+    padding:20px;
+    width:80%;
+    border:1px solid black;
+    border-radius:10px;
+    background-color:whitesmoke;
+}
+
+#asignaturas table thead th {
+    background-color: whitesmoke;
+    padding:5px;
+    font-weight:bold;
+    margin: auto;
+    padding:20px;
+    width:80%;
+    border:1px solid black;
+}
+
+#asignaturas table th {
+    fon-size:16px;
+    border-bottom: 1px silver solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+#asignaturas table tr td {
+    font-size:14px;
+}
+
+.celdaas {
+    width:62%;
+    text-align: left;
+}
+.celdaho {
+    width:1%;
+    text-align: center;
+}
+.celdapr {
+    width:38%;
+    text-align: left;
+    background-colo:red;
+}
+
+#logo {
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:200px;
+    height:200px;
+}
+#logo img {
+    width:100%;
+    display: inline-block;
+}
+
+.drop {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}

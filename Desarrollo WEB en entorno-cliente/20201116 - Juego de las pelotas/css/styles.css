@@ -1,0 +1,141 @@
+*{
+    box-sizing:border-box;margin:0;padding:0;
+    transition: all .5s;
+}
+.ocultar {
+    width:0 !important;
+    height:0 !important;
+    left: -200px !important;
+    opacity:0;
+}
+.pelota {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    box-shadow: 0 0 5px black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.cronometro{
+    width:200px;
+    height:100px;
+    top:10px;
+    left:calc(50% - 100px);
+    position:absolute;
+    text-align:center;
+}
+
+#hms{
+    height:68px;
+    padding:5px 0;
+    font-size:50px;
+    color:#000;
+}
+
+#tablero {
+    text-align: center;
+    font-size: 40px;
+    width:100%;
+    height:calc(100% - 100px);
+    position:relative;
+    left:0;
+    top:150px;
+    background-color: whitesmoke;
+}
+
+.rojo {
+    background-color:red;
+
+}
+
+.verde {
+    background-color:green;
+}
+
+.azul {
+    background-color:blue;
+}
+
+.selectorColor {
+    width:200px !important;
+    height:200px !important;
+    margin:20px;
+    border-radius:100px;
+    margin-left:calc(50% - 100px);
+}
+button {
+    padding:20px;
+    font-size:20px;
+}
+select {
+    padding:10px;
+    width:100px;
+    font-size:20px;
+    text-align:center;
+    margin-bottom:20px;
+}
+option {
+    padding:10px;
+}
+
+#modo {
+    position:absolute;
+    left:calc(50% - 500px);
+    top:300px;
+    font-size:30px;
+    width:1000px;
+}
+#modo div {
+    width:100%;
+    text-align:center;
+}
+
+#queEliminar div {
+    width:calc(50% - 20px);
+    float:left;
+    padding:30px;
+    font-size:30px;
+    border:1px solid gray;
+    margin:10px;
+}
+#queEliminar div:hover {
+    background-color: darkblue;
+    color:white;
+    cursor:pointer;
+}
+
+.seleccionado {
+    background-color: darkblue;
+    color:white;
+}
+button {
+    cursor: pointer;
+}
+
+.contador {
+    width:150px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    float:left;
+    padding:10px;
+    border:2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+#aciertos {
+    background-color:blue;
+    text-align: right;
+}
+#fallos {
+    background-color:red;
+    text-align:left;
+}
+#contadores {
+    position:absolute;
+    top:100px;
+    width:340px;
+    left:calc(50% - 170px);
+
+}

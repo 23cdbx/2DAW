@@ -1,0 +1,87 @@
+#fondo {
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:.6;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#modal {
+    padding:50px;
+    position:absolute;
+    width:800px;
+    box-shadow:0px 0px 20px black;
+    border-radius:15px;
+    height:auto;
+    background-color:white;
+    top:100px;
+    left: calc(50% - 400px);
+}
+#modal h3 {
+    text-align: center;
+    border-bottom:1px solid silver;
+    padding:10px;
+}
+
+#notas {
+    width:100%;
+    max-height: 300px;
+    overflow: auto;
+    font-size: 10px;
+    color:gray;
+}
+
+table {
+    margin-top:20px;
+}
+td {
+    padding: 5px;
+    width:25%;
+}
+.titulo {
+    width:20%;
+    font-weight: bold;
+    padding-left:25px;
+}
+.descripcion {
+    width:30%;
+    color:gray;
+    padding-right:30px;
+    text-align:right;
+    font-size:12px;
+}
+.oculto {
+    display:none;
+}
+
+.noresize {
+
+    margin-left: calc(50% - 400px);
+    height: 495px;
+    width: 800px;
+}
+
+h1 {
+    text-align:center;
+    padding:50px;
+}
+
+.poblacion {
+    width:21%;
+    font-size: 12px;
+    color:gray;
+}
+
+.titPob{
+    width: 12%;
+    font-weight: bold;
+    font-size:12px;
+}
+table {
+    margin-bottom:10px;
+}
+
+tr{
+    border-bottom: 1px solid whitesmoke;
+}

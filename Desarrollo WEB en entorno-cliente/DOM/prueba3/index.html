@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Cuadrados
+        </title>
+        <script type="text/javascript">
+
+            function circulo(elemento) {
+                elemento.classList.toggle("circulo");
+            }
+            function sombra(elemento) {
+                elemento.classList.toggle("sombra");
+            }
+            function sombraInt(elemento){
+                elemento.classList.add("sombraInt");
+            }
+            function eliminar(elemento) {
+                elemento.parentNode.remove();
+            }
+        </script>
+        <style>
+            * {
+                transition: all .3s;
+            }
+            #contenedor {
+                display:flex;
+                flex-direction: row;
+            }
+            .contenedorPadre {
+                display: flex;
+                flex-direction: column;
+            }
+            .sombra {
+                box-shadow:5px 5px 15px grey;
+            }
+            .caja {
+                width:300px;
+                height:300px;
+                border:1px solid black;
+                margin:5px;
+            }
+            .rojo {
+                background-color:red;
+            }
+            .verde {
+                background-color:green;
+            }
+            .azul {
+                background-color:blue;
+            }
+            .negro {
+                background-color:black;
+            }
+            button {
+                margin:auto;
+                padding:5px;
+            }
+            .circulo {
+                border-radius: 50%;
+            }
+            .sombraInt {
+                box-shadow:inset 5px 5px 15px black;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+      <div id="contenedor">
+          <div class="contenedorPadre">
+              <div class="caja rojo sombra" onmouseover="circulo(this)"
+                                     onmouseout="circulo(this)"
+                                     onmousedown="sombra(this)"
+                                     onmouseup="sombra(this)"
+                                     ondblclick="sombraInt(this)">
+
+              </div>
+              <button onclick="eliminar(this)">Eliminar</button>
+          </div>
+          <div class="contenedorPadre">
+              <div class="caja azul sombra" onmouseover="circulo(this)"
+                                     onmouseout="circulo(this)"
+                                     onmousedown="sombra(this)"
+                                     onmouseup="sombra(this)"
+                                     ondblclick="sombraInt(this)">
+
+              </div>
+              <button onclick="eliminar(this)">Eliminar</button>
+          </div>
+          <div class="contenedorPadre">
+              <div class="caja verde sombra" onmouseover="circulo(this)"
+                                      onmouseout="circulo(this)"
+                                      onmousedown="sombra(this)"
+                                      onmouseup="sombra(this)"
+                                      ondblclick="sombraInt(this)">
+
+              </div>
+              <button onclick="eliminar(this)">Eliminar</button>
+          </div>
+          <div class="contenedorPadre">
+              <div class="caja negro sombra" onmouseover="circulo(this)"
+                                      onmouseout="circulo(this)"
+                                      onmousedown="sombra(this)"
+                                      onmouseup="sombra(this)"
+                                      ondblclick="sombraInt(this)">
+
+              </div>
+              <button onclick="eliminar(this)">Eliminar</button>
+          </div>
+      </div>
+    </body>
+</html>

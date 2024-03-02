@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title></title>
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="cronometro">
+            <div id="hms"></div>
+        </div>
+        <div id="contadores">
+            <div id="aciertos" class="contador">
+                0
+            </div>
+            <div id="fallos" class="contador">
+                0
+            </div>
+        </div>
+
+        <div id="tablero">
+            <div id="modo">
+                <div>
+                    <p>Selecciona el numero de pelotas:</p>
+                    <select id="cantidad">
+                        <option value="10">10</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="500">500</option>
+                    </select>
+                </div>
+                <div id="queEliminar">
+                    <p>Elige el modo:</p>
+                    <div id="modoTodas" class="seleccionado">Eliminar todas las pelotas</div>
+                    <div id="modoUna">Eliminar un solo color</div>
+                </div>
+
+                <button id="jugar">Jugar</button>
+            </div>
+        </div>
+    </body>
+</html>
