@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(to bottom, #2bff00, #a623e2);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 500%;
+    text-shadow: 5px 5px 5px #524d4d;
+
+}
+
+p {
+    margin: 0;
+    font-size: 200%;
+    text-align: center;
+}
